@@ -3,7 +3,6 @@
 
 class Solution:
     def removeElement(self, nums, val: int) -> int:
-        count = 0
         i = 0
         length = len(nums)
         while i < length:
