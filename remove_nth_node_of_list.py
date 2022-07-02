@@ -1,7 +1,3 @@
-#Definition for singly-linked list.
-from sympy import false
-
-
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -28,7 +24,7 @@ class Solution(object):
                     removed = True
                 cursor = cursor.next
         return head
-                
+
 
 def print_list(head:ListNode):
     cursor = head
@@ -42,7 +38,7 @@ if __name__ == '__main__':
     for n in range(2,11):
         cursor.next = ListNode(n,None)
         cursor = cursor.next
-    
+
     print_list(head)
 
     n = int(input('Enter the n: '))
