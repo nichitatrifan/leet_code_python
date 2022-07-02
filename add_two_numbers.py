@@ -14,16 +14,15 @@ class Solution:
         num_str1 = ''
         num_str2 = ''
 
-        while (l1 != None) or (l2 != None):
-            if l1 != None:
+        while l1 or l2:
+            if l1:
                 num_str1 += str(l1.val)
                 l1 = l1.next
-            if l2 != None:
+            if l2:
                 num_str2 += str(l2.val)
                 l2 = l2.next
 
-        result_num = int(num_str1[::-1]) + int(num_str2[::-1])
-        result_str = str(result_num)
+        result_str = str(int(num_str1[::-1]) + int(num_str2[::-1]))
 
         head_result = ListNode(result_str[::-1][0], None)
         pointer = head_result
