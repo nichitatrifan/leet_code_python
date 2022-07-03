@@ -13,8 +13,6 @@ class Solution:
                 i += 1
         print(nums)
         return length
-        
-        
 
 
 if __name__ == '__main__':
