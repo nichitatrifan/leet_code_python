@@ -12,7 +12,15 @@ class Solution:
                     return answer
         return []
 
+    def twoSum_dict(self, nums: List[int], target: int):
+        my_dict = {}
+        for i, val in enumerate(nums):
+            if val in my_dict:
+                return [my_dict[val], i]
+            my_dict[target-val] = i
+
 
 if __name__ == '__main__' :
     solution = Solution()
     print(solution.twoSum([3,3],6))
+    print(solution.twoSum_dict([3,3],6))
