@@ -1,7 +1,7 @@
 #Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 #You may assume that each input would have exactly one solution, and you may not use the same element twice.
 #You can return the answer in any order.
-from typing import List
+from typing import Any, List, Dict
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -13,7 +13,7 @@ class Solution:
         return []
 
     def twoSum_dict(self, nums: List[int], target: int):
-        my_dict = {}
+        my_dict: Dict = {}
         for i, val in enumerate(nums):
             if val in my_dict:
                 return [my_dict[val], i]
