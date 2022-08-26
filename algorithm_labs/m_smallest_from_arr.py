@@ -13,14 +13,16 @@ def m_smallest_numbers(my_list:List, m:int):
 
 def m_smallest_numbers_solution2(my_list:List, m:int):
     temp = []
+    n = len(my_list)
     for i in range(m):
         min_index = 0
-        for j in range(len(my_list)):
+        for j in range(n-i):
             if my_list[min_index] > my_list[j]:
                 min_index = j
         temp.append(my_list[min_index])
-        my_list[0], my_list[min_index] = my_list[min_index], my_list[0]
-        my_list = my_list[1:]
+        #my_list[0], my_list[min_index] = my_list[min_index], my_list[0]
+        #my_list = my_list[1:]
+        my_list.pop(min_index)
     return temp
 
 
