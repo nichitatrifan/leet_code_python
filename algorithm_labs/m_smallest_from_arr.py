@@ -3,7 +3,7 @@ from typing import List
 
 
 def m_smallest_numbers(my_list:List, m:int):
-    for i in range(len(my_list)):
+    for i in range(m):
         smallest_index = i
         for j in range(i,len(my_list)):
             if my_list[j] < my_list[smallest_index]:
@@ -28,5 +28,5 @@ def m_smallest_numbers_solution2(my_list:List, m:int):
 
 if __name__ == '__main__':
     my_list = [1, 4, 2, 6, 3, 6, 2, 4, 6, 1]
-    #print(m_smallest_numbers(my_list, 5))
-    print(m_smallest_numbers_solution2([1, 4, 2, 6, 3, 6, 2, 4, 6, 1], 5))
+    print(m_smallest_numbers(my_list, 5))
+    #print(m_smallest_numbers_solution2([1, 4, 2, 6, 3, 6, 2, 4, 6, 1], 5))
