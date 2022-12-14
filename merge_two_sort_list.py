@@ -13,7 +13,7 @@ class Solution:
             return list2
         if list2 == None:
             return list1
-        
+
         if list1.val > list2.val:
             list2.next = self.mergeTwoLists(list1, list2.next)
             return list2
