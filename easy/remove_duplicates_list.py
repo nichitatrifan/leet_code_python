@@ -1,6 +1,8 @@
 # Given the head of a sorted linked list, delete all duplicates such that each element appears only once.
 # Return the linked list sorted as well.
 
+# since its SORTED we dont have to remember the repeats because they will always occure nexty to each other
+
 from typing import Optional
 
 # Definition for singly-linked list.
