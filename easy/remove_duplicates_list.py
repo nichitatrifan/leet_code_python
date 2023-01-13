@@ -20,8 +20,8 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         repeats : dict[int:int] = {}
 
-        current : ListNode = head
-        previous : ListNode = None
+        current : Optional[ListNode] = head
+        previous : Optional[ListNode] = None
 
         while current != None:
             # saving the repeats

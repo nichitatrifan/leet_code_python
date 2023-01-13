@@ -31,7 +31,7 @@ class Solution:
 
         return result_list
 
-    def inorderTraversal_recursion(self, root: Optional[TreeNode]) -> List[int]:
+    def inorderTraversal_recursion(self, root: Optional[TreeNode]):
         if root is None:
             return
         self.inorderTraversal(root.left)
